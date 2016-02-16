@@ -1,0 +1,6 @@
+{
+  "ambientDependencies": {
+    "lodash": "github:DefinitelyTyped/DefinitelyTyped/lodash/lodash.d.ts#ad1c4f411a9ad949c0c73de4d190be1b2bf08a6f",
+    "marked": "github:DefinitelyTyped/DefinitelyTyped/marked/marked.d.ts#493d3b6882c79289cd9597a45c287250297d5b9d"
+  }
+}

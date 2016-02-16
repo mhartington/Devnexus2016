@@ -1,0 +1,15 @@
+<ion-navbar *navbar primary>
+  <ion-title>
+    {{person.firstName}} {{person.lastName}}
+  </ion-title>
+</ion-navbar>
+
+<ion-content padding class="speaker-detail">
+  <ion-card>
+    <ion-card-header>
+      {{person.firstName}} {{person.lastName}}
+    </ion-card-header>
+    <ion-card-content [innerHtml]="person.bio|markdown">
+    </ion-card-content>
+  </ion-card>
+</ion-content>

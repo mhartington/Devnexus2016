@@ -1,0 +1,21 @@
+<ion-navbar *navbar primary>
+  <ion-title>
+    {{session.title}}
+  </ion-title>
+</ion-navbar>
+
+<ion-content padding class="session-detail">
+  <ion-card>
+    <ion-card-header>
+      {{session.title}}
+    </ion-card-header>
+    <ion-card-content>
+
+      <div class="description" [innerHtml]="session.description | markdown"></div>
+      <h3 [ngStyle]="{'color': session.track.color}">{{session.track.name}}</h3>
+    </ion-card-content>
+    <ion-card-footer>
+      <button clear (click)="speakersDetail(session.speakers)">Speakers</button>
+    </ion-card-footer>
+  </ion-card>
+</ion-content>

@@ -1,0 +1,13 @@
+<ion-navbar *navbar primary>
+  <ion-title>Speakers</ion-title>
+</ion-navbar>
+
+<ion-toolbar primary>
+  <ion-searchbar [(ngModel)]="searchQuery"></ion-searchbar>
+</ion-toolbar>
+
+<ion-content padding class="speakers">
+  <a ion-item *ngFor="#speaker of speakers | orderBy:'firstName' | filter:searchQuery" (click)="speakerDeatail(speaker)">
+    {{speaker.firstName}} {{speaker.lastName}}
+  </a>
+</ion-content>
